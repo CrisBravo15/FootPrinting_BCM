@@ -22,3 +22,6 @@ Ejecutar primero el archivo pasivo (No se requiere permiso para realizar)
 Opciones:
   -t, --target : (requerido) Host o IP a escanear. Ej: tunombre.netlify.app o 1.2.3.4
   -o, --output : (opcional) Ruta del archivo JSON de salida. Si no se indica, el script genera nmap_report_YYYYmmddTHHMMSSZ.json.
+
+# Variables de entorno y Permisos
+Utilizamos la variable autorización para preguntar al usuario si tiene el permiso o si no lo tiene, en caso de que no lo tenga el sistema hace un exit, en caso de colocar que tenga el permiso se le pide el nombre y se coloca en un archivo oculto en C: que se llama registro.txt que guarda el nombre del usuario, el permiso que dio, el dominio al que realizó el escaneo y la fecha con la hora que se realizó el script
